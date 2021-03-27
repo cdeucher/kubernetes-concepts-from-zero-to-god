@@ -114,7 +114,15 @@
 
 
 ## Container Runtimes
+  - What is a container runtime? <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
   - <a herf="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
+
+  <img src="./img/container_runtime.png">
+
+## The Container Runtime Interface
+  - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
+  - What's CRI-O? <a href="https://cri-o.io/">Link</a>
+
 
 #### What's LXC, runC 
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
@@ -131,7 +139,6 @@
 #### What's Docker, Podman, CRI-O  
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
-  - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
 
 #  Kubernetes
