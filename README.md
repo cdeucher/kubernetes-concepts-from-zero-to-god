@@ -109,13 +109,12 @@
 
 
 ## Container Engines
-  - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD. 
-  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
+  - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
 
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
 
-## LXD vs LXC vs Docker vs Podman
+#### LXD vs LXC vs Docker vs Podman
   - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
