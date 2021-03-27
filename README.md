@@ -68,11 +68,11 @@
 - Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
 - Namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
 
-In short:
+- In short:
 
-Cgroups = limits how much you can use;
+Cgroups = limits how much you can use
 namespaces = limits what you can see (and therefore use)
-See more at "Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic" by Jérôme Petazzoni.
+<a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
 
 Cgroups involve resource metering and limiting:
 
@@ -91,20 +91,30 @@ uts
 ipc
 
 
+## Docker vs LXD vs LXC
+
+ - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
+
+## Docker vs LXD
+- <img src="./img/DockerLXD.jpg">
+
+
 ## Open Container Initiative Runtime Specification
  - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
  - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
 
 
-## Docker vs LXD vs LXC
-
- -> Comparative: 
- ![file](./pdf/docker vs LXD&LXC.pdf) 
-
- -> kubernetes-is-removing-docker-support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
 
 
-## Plus
+
+
+### Plus
+
+## Docker Revolution
+ - Docker Community Edition
+ - Docker Compose
+ - Docker Swarm
+ - <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Here </a>
 
 
 
