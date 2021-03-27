@@ -63,7 +63,7 @@
 
 - understanding-user-space-vs-kernel-space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
 
-![kernel-space-matters](./img/user-space-vs-kernel-space-system-calls-gears.png =300x200)
+![kernel-space-matters](./img/user-space-vs-kernel-space-system-calls-gears.png){width=250px}
 
 
 Open Container Initiative Runtime Specification : <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
