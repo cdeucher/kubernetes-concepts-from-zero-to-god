@@ -38,11 +38,11 @@
   - Base Image
   - Platform Image
   - Layer 
-  - <a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Here</a>
+  - <a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Link</a>
 
 ## Advanced Terminology 
   - Container Image Format
-  - Container Engine
+  - Container Engine - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
   - Container Host
   - Registry Server
   - Container Orchestration
@@ -59,18 +59,18 @@
     - Containerized  Components
     - Deployer Images
     - System Containers  
-  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/">Here</a>
+  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/">Link</a>
 
 
 
 ## User space vs Kernel space
-- Understanding user space and kernel space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
+- Understanding user space and kernel space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Link</a>
 
     <img src="./img/user-space-vs-kernel-space-simple-user-space.png" height="300"/>
 
 
 ## How user space affects your application
-- Understanding h ow user space affects your application: <a href="https://www.redhat.com/en/blog/architecting-containers-part-3-how-user-space-affects-your-application">Here</a>
+- Understanding h ow user space affects your application: <a href="https://www.redhat.com/en/blog/architecting-containers-part-3-how-user-space-affects-your-application">Link</a>
 
     <img src="./img/user-space-vs-kernel-space-super-privileged-containers-vs-service-containers.jpg" height="300"/>
 
@@ -105,20 +105,33 @@
 
 ## Open Container Initiative Runtime Specification
  - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
- - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
+ - Introducing runC: a lightweight universal container runtime : <a href="https://www.docker.com/blog/runc/">Link</a>
+ - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
+
  <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 
+## Container Engines
+   - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD. 
+    - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
 
-## Docker vs LXD vs LXC
- - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Here</a>
- - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Here</a>
- - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Here</a>
+- Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
- - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
+
+## LXD vs LXC vs Docker vs Podman
+ - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
+ - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
+ - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
+ - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
+
 
 ## Docker vs LXD
 <img src="./img/DockerLXD.jpg" height="600"/>
+
+
+####  Kubernetes
+
+
 
 
 # Plus
@@ -127,7 +140,7 @@
 - Docker Community Edition
 - Docker Compose
 - Docker Swarm
-- <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Here </a>
+- <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Link </a>
 
 
 
