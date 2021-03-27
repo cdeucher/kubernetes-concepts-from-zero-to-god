@@ -106,7 +106,7 @@
 ## Open Container Initiative Runtime Specification
  - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
  - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
- <img src="./img/Kubernetes is Removing Docker Support, Kubernetes is Not Removing Docker Support-1.png">
+ <img src="./img/Kubernetes is Removing Docker Support, Kubernetes is Not Removing Docker Support-1.png" style="background-color: aliceblue;">
 
 
 ## Docker vs LXD vs LXC
