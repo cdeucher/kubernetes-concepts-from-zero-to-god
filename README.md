@@ -18,6 +18,7 @@
 * [Basic Terminology](#basic-terminology)
 * [Advanced Terminology](#advanced-terminology)
 * [User space vs Kernel space](#User-space-vs-Kernel-space)
+* [How user space affects your application](#How-user-space-affects-your-application)
 * [Cgroup vs Namespaces](#Cgroup-vs-Namespaces)
 * [Docker vs LXD vs LXC](#Docker-vs-LXD-vs-LXC)
 * [Docker vs LXD](#Docker-vs-LXD)
@@ -49,25 +50,28 @@
   - Kernel Namespace
   - Graph Driver
   - Container Use Cases
-  - Application Containers
-  - Operating System Containers
-  - Pet Containers
-  - Super Privileged Containers
+    - Application Containers
+    - Operating System Containers
+    - Pet Containers
+    - Super Privileged Containers
   - Architecture of Containers
-  - Application Images
-  - Containerized  Components
-  - Deployer Images
-  - System Containers  
-  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Here</a>
+    - Application Images
+    - Containerized  Components
+    - Deployer Images
+    - System Containers  
+  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/">Here</a>
 
 
 
 ## User space vs Kernel space
 - Understanding user space and kernel space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
 
+## How user space affects your application
+- Understanding h ow user space affects your application: <a href="https://www.redhat.com/en/blog/architecting-containers-part-3-how-user-space-affects-your-application">Here</a>
+
+
 <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system"
 	title="user-space-vs-kernel-space-system" height="300" />
-
 
 ## Cgroup vs Namespaces
 - Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
