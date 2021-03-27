@@ -12,7 +12,7 @@
 </h4>
 
 <!--ts-->
-### Guide
+### Table Contents
     * [Basic Terminology](#Basic-Terminology)
     * [Advanced Terminology](#Advanced-Terminology)
       * [Plus](#Plus)
