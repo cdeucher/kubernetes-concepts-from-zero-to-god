@@ -85,17 +85,15 @@
 
   - Cgroups = limits how much you can use
   - namespaces = limits what you can see (and therefore use)
-  - <a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
+    - <a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
 
 - Cgroups involve resource metering and limiting:
-
   - memory
   - CPU
   - block I/O
   - network
 
 - Namespaces provide processes with their own view of the system:
-
   - pid
   - net
   - mnt
@@ -143,7 +141,8 @@
 - <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Link </a>
 
 
-
+## Hello world!
+   <img src="NaminhaMaquina.png"/>
 
 
 
