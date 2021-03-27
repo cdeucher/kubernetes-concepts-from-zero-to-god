@@ -66,16 +66,16 @@
 ## User space vs Kernel space
 - Understanding user space and kernel space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
 
-    <img src="./img/user-space-vs-kernel-space-simple-user-space.png" height="300" >
+    <img src="./img/user-space-vs-kernel-space-simple-user-space.png" height="300" style="background-color: aliceblue;">
 
 
 ## How user space affects your application
 - Understanding h ow user space affects your application: <a href="https://www.redhat.com/en/blog/architecting-containers-part-3-how-user-space-affects-your-application">Here</a>
 
-    <img src="./img/user-space-vs-kernel-space-super-privileged-containers-vs-service-containers.png" height="300" >
+    <img src="./img/user-space-vs-kernel-space-super-privileged-containers-vs-service-containers.png" height="300" style="background-color: aliceblue;">
 
     - A typical program gets access to resources in the kernel through layers of abstraction similar to the following diagram:
-    <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system" title="user-space-vs-kernel-space-system" height="300" />
+    <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system" title="user-space-vs-kernel-space-system" height="300" style="background-color: aliceblue;"/>
 
 ## Cgroup vs Namespaces
 - Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
