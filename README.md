@@ -127,10 +127,6 @@
   - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
 
-## Docker and LXD
-  <img src="./img/DockerLXD.jpg" height="600"/>
-
-
 ####  Kubernetes
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
@@ -142,6 +138,9 @@
 
 
 # Plus
+
+## Docker and LXD
+  <img src="./img/DockerLXD.jpg" height="300"/>
 
 ## Docker Revolution
   - Docker Community Edition
