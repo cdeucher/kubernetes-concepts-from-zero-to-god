@@ -9,23 +9,21 @@
 </h4>
 
 
-<h4 align="center"> 
-    <p align="center">An Overview of Kubernetes Concepts</p>
-</h4>
+<h1 align="center">An Overview of Kubernetes Concepts</h1>
 
 
 
 
 
 <!--ts-->
-### Table Contents
+## Table of contents
     * [Basic Terminology](#Basic-Terminology)
     * [Advanced Terminology](#Advanced-Terminology)
       * [Plus](#Plus)
 <!--te-->
 
 
-### Basic Terminology
+## Basic Terminology
   -> Container
   -> Image
   -> Container Image
@@ -39,7 +37,7 @@
   -> Layer 
 <a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Here</a>
 
-### Advanced Terminology 
+## Advanced Terminology 
   -> Container Image Format
   -> Container Engine
   -> Container Host
