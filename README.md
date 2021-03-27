@@ -75,7 +75,7 @@
     <img src="./img/user-space-vs-kernel-space-super-privileged-containers-vs-service-containers.png" height="300" >
 
     - A typical program gets access to resources in the kernel through layers of abstraction similar to the following diagram:
-        <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system" title="user-space-vs-kernel-space-system" height="300" />
+    <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system" title="user-space-vs-kernel-space-system" height="300" />
 
 ## Cgroup vs Namespaces
 - Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
