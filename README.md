@@ -1,7 +1,9 @@
-<h1 align="center">Kubernetes Concepts - From Zero to God</h1>
+<h1 align="center">
+    ![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
 
+    Kubernetes Concepts - From Zero to God
+</h1>
 
-![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
 
 
 <h1 align="center"> 
