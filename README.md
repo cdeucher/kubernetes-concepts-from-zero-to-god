@@ -87,44 +87,43 @@
   - namespaces = limits what you can see (and therefore use)
     - <a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
 
-- Cgroups involve resource metering and limiting:
-  - memory
-  - CPU
-  - block I/O
-  - network
+  - Cgroups involve resource metering and limiting:
+    - memory
+    - CPU
+    - block I/O
+    - network
 
-- Namespaces provide processes with their own view of the system:
-  - pid
-  - net
-  - mnt
-  - uts
-  - ipc
+  - Namespaces provide processes with their own view of the system:
+    - pid
+    - net
+    - mnt
+    - uts
+    - ipc
 
 
 ## Open Container Initiative Runtime Specification
- - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
- - Introducing runC: a lightweight universal container runtime : <a href="https://www.docker.com/blog/runc/">Link</a>
- - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
+  - The Open Container Initiative develops specifications for standards on Operating System process and application containers: <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
+  - Introducing runC: a lightweight universal container runtime : <a href="https://www.docker.com/blog/runc/">Link</a>
 
- <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
+    <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 
 ## Container Engines
-   - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD. 
-    - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
+  - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD. 
+  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
 
-- Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
+  - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
 
 ## LXD vs LXC vs Docker vs Podman
- - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
- - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
- - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
- - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
+  - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
+  - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
+  - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
+  - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
 
 
 ## Docker vs LXD
-<img src="./img/DockerLXD.jpg" height="600"/>
+  <img src="./img/DockerLXD.jpg" height="600"/>
 
 
 ####  Kubernetes
@@ -135,10 +134,10 @@
 # Plus
 
 ## Docker Revolution
-- Docker Community Edition
-- Docker Compose
-- Docker Swarm
-- <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Link </a>
+  - Docker Community Edition
+  - Docker Compose
+  - Docker Swarm
+  - <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Link </a>
 
 
 ## Hello world!
