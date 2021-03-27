@@ -1,9 +1,8 @@
-<h1 align="center">
-    ![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
+![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
 
+<h1 align="center">
     Kubernetes Concepts - From Zero to God
 </h1>
-
 
 
 <h1 align="center"> 
@@ -11,13 +10,15 @@
 </h1>
 
 
-<h1 align="center">An Overview of Kubernetes Concepts</h1>
+
+<h4 align="center">An Overview of Kubernetes Concepts</h4>
 
 
 ## Table of contents
 * [Basic Terminology](#basic-terminology)
 * [Advanced Terminology](#advanced-terminology)
 * [Plus](#plus)
+
 
 ## Basic Terminology
   -> Container
