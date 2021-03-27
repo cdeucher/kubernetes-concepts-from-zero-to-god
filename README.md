@@ -1,16 +1,19 @@
 <h1 align="center">Kubernetes From Zero to God</h1>
 
-<p align="center">Guide to kubernetes from basics to advanced</p>
+
+<p align="center">An Overview of Kubernetes Concepts</p>
+
 
 ![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
+
 
 <h4 align="center"> 
 	🚧  🚀 Em construção...  🚧
 </h4>
 
 <!--ts-->
-   * [Basic Terminology](#Basic Terminology)
-   * [Advanced Terminology](#Advanced Terminology)
+   * [Basic-Terminology](#Basic Terminology)
+   * [Advanced-Terminology](#Advanced Terminology)
       * [Plus](#Plus)
 <!--te-->
 
@@ -51,7 +54,7 @@
 <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Here</a>
 
 
-[![GitHub issues](https://img.shields.io/github/issues/ryanface/Kubernetes-from-zero-to-god?style=for-the-badge)](https://github.com/ryanface/Kubernetes-from-zero-to-god/issues)
+[![GitHub issues](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)](https://github.com/ryanface/Kubernetes-from-zero-to-god/issues)
 
 
 ### Plus
