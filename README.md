@@ -12,9 +12,9 @@
 </h4>
 
 <!--ts-->
-   * [Terminology]
-      * [Basic](#Basic Terminology)
-      * [Advanced](#Advanced Terminology)
+### Guide
+    * [Basic Terminology](#Basic-Terminology)
+    * [Advanced Terminology](#Advanced-Terminology)
       * [Plus](#Plus)
 <!--te-->
 
