@@ -13,20 +13,9 @@
 
 
 ## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-
-## General info
-This project is simple Lorem ipsum dolor generator.
-
-<!--ts-->
-## Table of contents
-    * [Basic Terminology](#Basic-Terminology)
-    * [Advanced Terminology](#Advanced-Terminology)
-      * [Plus](#Plus)
-<!--te-->
-
+* [Basic Terminology](#basic-terminology)
+* [Advanced Terminology](#advanced-terminology)
+* [Plus](#plus)
 
 ## Basic Terminology
   -> Container
