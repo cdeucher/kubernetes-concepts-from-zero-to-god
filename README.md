@@ -101,14 +101,14 @@
 
 
 ## Docker vs LXD vs LXC
- - What's Docker? <a href="https://docs.docker.com/get-started/overview/"></a>
+ - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Here</a>
  - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Here</a>
  - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Here</a>
 
  - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
 
 ## Docker vs LXD
-- <img src="./img/DockerLXD.jpg">
+<img src="./img/DockerLXD.jpg" height="600" >
 
 
 ### Plus
