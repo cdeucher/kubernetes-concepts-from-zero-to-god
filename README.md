@@ -114,32 +114,31 @@
 
 
 ## Container Runtimes
-  - What is a container runtime? <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
-  - <a herf="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
+  - Open Container Initiative <a herf="https://opencontainers.org/">Link</a>
+  - A Comprehensive Container Runtime Comparison <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
+  - Demystifying Containers: Container Runtimes<a herf="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
 
-  <img src="./img/container_runtime.png">
+  - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
+
+    <img src="./img/container_runtime.png">
+
 
 ## The Container Runtime Interface
   - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
   - What's CRI-O? <a href="https://cri-o.io/">Link</a>
+  - What's rktlet? <a href="https://github.com/kubernetes-retired/rktlet">Link</a>
 
 
-#### What's LXC, runC 
+#### What's LXC, Docker, Podman
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
-  - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
-
+  - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
+  - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
 
 ## Container Engines
   - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, RKT, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
 
   <img src="./img/TYING IT ALL TOGETHER.png"/>
     <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
-
-
-#### What's Docker, Podman, CRI-O  
-  - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
-  - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
-
 
 #  Kubernetes
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
