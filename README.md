@@ -11,7 +11,7 @@
 
 
 
-<h4 align="center">An Overview of Kubernetes Concepts</h4>
+<h2 align="center">An Overview of Kubernetes Concepts</h2>
 
 
 ## Table of Contents
@@ -115,13 +115,16 @@
 <img src="./img/DockerLXD.jpg" height="600" >
 
 
-### Plus
+# Plus
 
 ## Docker Revolution
- - Docker Community Edition
- - Docker Compose
- - Docker Swarm
- - <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Here </a>
+- Docker Community Edition
+- Docker Compose
+- Docker Swarm
+- <a href="https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html"> Here </a>
+
+
+
 
 
 
