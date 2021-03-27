@@ -32,7 +32,7 @@
   - Base Image
   - Platform Image
   - Layer 
-<a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Here</a>
+  - <a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Here</a>
 
 ## Advanced Terminology 
   - Container Image Format
@@ -53,30 +53,20 @@
   - Containerized  Components
   - Deployer Images
   - System Containers  
-<a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Here</a>
+  - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Here</a>
 
 
-[![GitHub issues](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)](https://github.com/ryanface/Kubernetes-from-zero-to-god/issues)
 
-
-## Plus
-
-- understanding-user-space-vs-kernel-space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
+## User space vs Kernel space
+- Understanding user space and kernel space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
 
 <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system"
 	title="user-space-vs-kernel-space-system" height="300" />
 
 
-Open Container Initiative Runtime Specification : <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
- -> The Open Container Initiative develops specifications for standards on Operating System process and application containers.
-
-
-
-- Cgroup vs Namespaces
-
-
-cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
-namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
+## Cgroup vs Namespaces
+- Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
+- Namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
 
 In short:
 
@@ -101,10 +91,22 @@ uts
 ipc
 
 
-- Docker vs LXD vs LXC
+## Open Container Initiative Runtime Specification
+ - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
+ - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
 
- -> Comparativo: 
+
+## Docker vs LXD vs LXC
+
+ -> Comparative: 
  ![file](./pdf/docker vs LXD&LXC.pdf) 
 
  -> kubernetes-is-removing-docker-support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
+
+
+## Plus
+
+
+
+[![GitHub issues](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)](https://github.com/ryanface/Kubernetes-from-zero-to-god/issues)
 
