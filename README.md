@@ -20,9 +20,11 @@
 * [User space vs Kernel space](#User-space-vs-Kernel-space)
 * [How user space affects your application](#How-user-space-affects-your-application)
 * [Cgroup vs Namespaces](#Cgroup-vs-Namespaces)
-* [Docker vs LXD vs LXC](#Docker-vs-LXD-vs-LXC)
-* [Docker vs LXD](#Docker-vs-LXD)
 * [Open Container Initiative Runtime Specification](#Open-Container-Initiative-Runtime-Specification)
+* [What's LXC, runC](#What's-LXC,-runC)
+* [Container Engines](#Container-Engines)
+* [What's Docker, Podman, CRI-O](#What's-Docker,-Podman,-CRI-O)
+* [Kubernetes](#Kubernetes)
 * [Plus](#plus)
 
 
@@ -46,7 +48,7 @@
   - Container Host
   - Registry Server
   - Container Orchestration
-  - Container Runtime
+  - Container Runtime - <a herf="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo55">Link</a>
   - Kernel Namespace
   - Graph Driver
   - Container Use Cases
@@ -127,7 +129,7 @@
   - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
 
-####  Kubernetes
+#  Kubernetes
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
 
