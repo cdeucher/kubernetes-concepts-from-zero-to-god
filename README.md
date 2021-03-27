@@ -81,7 +81,7 @@
 - Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
 - Namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
 
-- In short:
+#### In short:
 
   - Cgroups = limits how much you can use
   - namespaces = limits what you can see (and therefore use)
@@ -114,7 +114,7 @@
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
 
-#### LXD vs LXC vs Docker vs Podman
+### LXD vs LXC vs Docker vs Podman
   - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
