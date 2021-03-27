@@ -116,11 +116,12 @@
   <img src="./img/TYING IT ALL TOGETHER.png"/>
     <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Link</a>
 
-### What's LXD, LXC, Docker, Podman, CRIO-
+### What's LXD, LXC, Docker, Podman, CRI-O
   - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
+  - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
 
 ## Docker and LXD
