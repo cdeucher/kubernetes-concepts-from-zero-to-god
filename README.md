@@ -14,7 +14,7 @@
 <h4 align="center">An Overview of Kubernetes Concepts</h4>
 
 
-## Table of contents
+## Table of Contents
 * [Basic Terminology](#basic-terminology)
 * [Advanced Terminology](#advanced-terminology)
 * [User space vs Kernel space](#User-space-vs-Kernel-space)
@@ -75,33 +75,24 @@
 
 - In short:
 
-Cgroups = limits how much you can use
-namespaces = limits what you can see (and therefore use)
-<a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
+  - Cgroups = limits how much you can use
+  - namespaces = limits what you can see (and therefore use)
+  - <a href="https://pt.slideshare.net/jpetazzo/anatomy-of-a-container-namespaces-cgroups-some-filesystem-magic-linuxcon">Anatomy of a Container: Namespaces, cgroups & Some Filesystem Magic</a>
 
-Cgroups involve resource metering and limiting:
+- Cgroups involve resource metering and limiting:
 
-memory
-CPU
-block I/O
-network
-Namespaces provide processes with their own view of the system
+  - memory
+  - CPU
+  - block I/O
+  - network
 
-Multiple namespaces:
+- Namespaces provide processes with their own view of the system:
 
-pid
-net
-mnt
-uts
-ipc
-
-
-## Docker vs LXD vs LXC
-
- - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
-
-## Docker vs LXD
-- <img src="./img/DockerLXD.jpg">
+  - pid
+  - net
+  - mnt
+  - uts
+  - ipc
 
 
 ## Open Container Initiative Runtime Specification
@@ -109,8 +100,15 @@ ipc
  - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
 
 
+## Docker vs LXD vs LXC
+ - What's Docker? <a href="https://docs.docker.com/get-started/overview/"></a>
+ - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Here</a>
+ - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Here</a>
 
+ - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Here</a>
 
+## Docker vs LXD
+- <img src="./img/DockerLXD.jpg">
 
 
 ### Plus
