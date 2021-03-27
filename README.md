@@ -21,38 +21,38 @@
 
 
 ## Basic Terminology
-  -> Container
-  -> Image
-  -> Container Image
-  -> Image Layer
-  -> Index
-  -> Registry
-  -> Repository
-  -> Tag
-  -> Base Image
-  -> Platform Image
-  -> Layer 
+  - Container
+  - Image
+  - Container Image
+  - Image Layer
+  - Index
+  - Registry
+  - Repository
+  - Tag
+  - Base Image
+  - Platform Image
+  - Layer 
 <a href="https://developers.redhat.com/blog/2016/01/13/a-practical-introduction-to-docker-container-terminology/">Here</a>
 
 ## Advanced Terminology 
-  -> Container Image Format
-  -> Container Engine
-  -> Container Host
-  -> Registry Server
-  -> Container Orchestration
-  -> Container Runtime
-  -> Kernel Namespace
-  -> Graph Driver
-  -> Container Use Cases
-  -> Application Containers
-  -> Operating System Containers
-  -> Pet Containers
-  -> Super Privileged Containers
-  -> Architecture of Containers
-  -> Application Images
-  -> Containerized  Components
-  -> Deployer Images
-  -> System Containers  
+  - Container Image Format
+  - Container Engine
+  - Container Host
+  - Registry Server
+  - Container Orchestration
+  - Container Runtime
+  - Kernel Namespace
+  - Graph Driver
+  - Container Use Cases
+  - Application Containers
+  - Operating System Containers
+  - Pet Containers
+  - Super Privileged Containers
+  - Architecture of Containers
+  - Application Images
+  - Containerized  Components
+  - Deployer Images
+  - System Containers  
 <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Here</a>
 
 
@@ -65,7 +65,7 @@
 
 <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system"
 	title="user-space-vs-kernel-space-system" height="300" />
-    
+
 
 Open Container Initiative Runtime Specification : <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Here</a>
  -> The Open Container Initiative develops specifications for standards on Operating System process and application containers.
