@@ -113,15 +113,17 @@
 
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
+  <img src="./img/TYING IT ALL TOGETHER.png"/>
+    <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Link</a>
 
-### LXD vs LXC vs Docker vs Podman
+### What's LXD, LXC, Docker, Podman, CRIO-
   - What's LXC? <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's LXD? <a href="https://linuxcontainers.org/lxd/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
 
 
-## Docker vs LXD
+## Docker and LXD
   <img src="./img/DockerLXD.jpg" height="600"/>
 
 
