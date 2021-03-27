@@ -102,7 +102,9 @@
 
 
 ## Open Container Initiative Runtime Specification
-  - The Open Container Initiative develops specifications for standards on Operating System process and application containers: <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
+  - The Open Container Initiative develops specifications for standards on Operating System process and application containers: 
+    - <a href="https://opencontainers.org/">Link</a>
+    - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
 
     <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
