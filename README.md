@@ -1,19 +1,24 @@
-<h1 align="center">Kubernetes From Zero to God</h1>
+<h1 align="center">Kubernetes Concepts - From Zero to God</h1>
 
 
 ![Badge](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)
 
 
-<h4 align="center"> 
+<h1 align="center"> 
 	🚧  🚀 Em construção...  🚧
-</h4>
+</h1>
 
 
 <h1 align="center">An Overview of Kubernetes Concepts</h1>
 
 
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-
+## General info
+This project is simple Lorem ipsum dolor generator.
 
 <!--ts-->
 ## Table of contents
@@ -62,7 +67,7 @@
 [![GitHub issues](https://img.shields.io/static/v1?label=Kubernetes&message=From%20Zero%20To%20God&color=326CE5&style=for-the-badge&logo=ghost)](https://github.com/ryanface/Kubernetes-from-zero-to-god/issues)
 
 
-### Plus
+## Plus
 
 - understanding-user-space-vs-kernel-space : <a href="https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters">Here</a>
 
