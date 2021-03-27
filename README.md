@@ -142,7 +142,7 @@
 
 
 ## Hello world!
-   <img src="NaminhaMaquina.png"/>
+   <img src="./img/NaminhaMaquina.png"/>
 
 
 
