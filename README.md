@@ -106,10 +106,10 @@
     - <a href="https://opencontainers.org/">Link</a>
     - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
 
-    <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
+      <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 
-#### What's LXC, runC 
+## What's LXC, runC 
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
 
