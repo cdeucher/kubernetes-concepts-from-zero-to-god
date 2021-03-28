@@ -116,7 +116,7 @@
 
 
 ## Low-Level and High-Level Container Runtimes
-  - skip 
+  - Why are Container Runtimes so Confusing? <a href="https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r">Link</a> 
     <img src="./img/runtimes.jpg">
 
 
