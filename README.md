@@ -152,7 +152,7 @@
        - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
 
-  <img src="./img/TYING IT ALL TOGETHER.png"/>
+  <img src="./img/containers.runtimes.works.png"/>
     <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
 
 
@@ -195,6 +195,7 @@
   - K8s is just an abbreviation of Kubernetes  
 
    - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
+     - Dockershim Deprecation FAQ: <a href="https://kubernetes.io/blog/2020/12/02/dockershim-faq/">Link</a> 
 
    - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
 
@@ -291,6 +292,7 @@
   - cri (CRI)
     - cri is a containerd plugin implementation of Kubernetes container runtime interface (CRI) <a href="https://github.com/containerd/cri">Link</a>
     - cri-tools is a CLI and validation tools for Kubelet Container Runtime Interface (CRI). <a href="https://github.com/kubernetes-sigs/cri-tools">Link</a> 
+    - docker cli to crictl: <a href="https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/#mapping-from-docker-cli-to-crictl">Link</a>
   - Kubectl Command Reference:<a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">Link</a>
 
   <img src="./img/cri_containerd.png"/>
