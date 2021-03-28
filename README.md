@@ -155,8 +155,9 @@
     <img src="./img/container_runtime.png">
 
 
-## Container Runtime Interface
+## Container Runtime Interface (CRI)
   - Uncouple the Kubernetes from runtimes.
+  - CRI was introduced in Kubernetes 1.5 and acts as a bridge between the kubelet and the High-Level Container Runtimes.
 
   - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
   - Kubernetes Container Runtime Interface: <a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-container-runtime-interface_596339">Link</a>
@@ -172,6 +173,14 @@
 #  Kubernetes
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
+## kubelet 
+  - The kubelet is an agent that sits on each worker node in the Kubernetes cluster. The kubelet is responsible for managing the container workloads for its node. <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
+  - 
+
+#### CRI (CRI)
+  -  containerd plugin implementation of Kubernetes container runtime interface (CRI) <a href="https://github.com/containerd/cri">Link</a>
+
+  <img src="./img/cri_containerd.png"/>
 
 
 ## -
