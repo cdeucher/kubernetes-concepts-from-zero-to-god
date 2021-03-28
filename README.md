@@ -151,10 +151,6 @@
        - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
        - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
-  - *Container Engine
-       - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
-       - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
-
 
   <img src="./img/TYING IT ALL TOGETHER.png"/>
     <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
@@ -185,10 +181,68 @@
 
 
 #  Kubernetes
-  - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
+  - Kubernetes is an open source orchestration tool developed by Google for managing microservices or containerized applications across a distributed cluster of nodes. Kubernetes provides highly resilient infrastructure with zero downtime deployment capabilities, automatic rollback, scaling, and self-healing of containers (which consists of auto-placement, auto-restart, auto-replication , and scaling of containers on the basis of CPU usage).
+
+The main objective of Kubernetes is to hide the complexity of managing a fleet of containers by providing REST APIs for the required functionalities. Kubernetes is portable in nature, meaning it can run on various public or private cloud platforms such as AWS, Azure, OpenStack, or Apache Mesos. It can also run on bare metal machines. <a href="https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/">Link</a>
+
+   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
 
-  <img src="./img/kubernetes.png"/>
+   <img src="./img/kubernetes.png"/>
+
+
+## Kubernetes Components and Architecture 
+   - Kubernetes follows a client-server architecture. It’s possible to have a multi-master setup (for high availability), but by default there is a single master server which acts as a controlling node and point of contact. The master server consists of various components including a kube-apiserver, an etcd storage, a kube-controller-manager, a cloud-controller-manager, a kube-scheduler, and a DNS server for Kubernetes services. Node components include kubelet and kube-proxy on top of Docker. <a href="https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/">Link</a>
+
+   <img src="./img/Kubernetes-101-Architecture-Diagram.jpg">
+
+#### Kubernetes Concepts
+  - <a href="https://kubernetes.io/docs/concepts/">Link</a>
+  - Cluster Architecture
+    - The architectural concepts behind Kubernetes.
+
+  - Containers
+    - Technology for packaging an application along with its runtime dependencies.
+
+  - Workloads
+    - Understand Pods, the smallest deployable compute object in Kubernetes, and the higher-level abstractions that help you to run them.
+
+  - Services, Load Balancing, and Networking
+    - Concepts and resources behind networking in Kubernetes.
+
+  - Storage
+    - Ways to provide both long-term and temporary storage to Pods in your cluster.
+
+  - Configuration
+    - Resources that Kubernetes provides for configuring Pods.
+
+  - Security
+    - Concepts for keeping your cloud-native workload secure.
+
+  - Policies
+    - Policies you can configure that apply to groups of resources.
+
+  - Scheduling and Eviction
+    - In Kubernetes, scheduling refers to making sure that Pods are matched to Nodes so that the kubelet can run them. Eviction is the process of proactively failing one or more Pods on resource-starved Nodes.
+
+  - Cluster Administration
+    - Lower-level detail relevant to creating or administering a Kubernetes cluster.
+
+  - Extending Kubernetes
+    - Different ways to change the behavior of your Kubernetes cluster.
+
+#### Kubernetes Design Principles
+
+#### Master Components
+  - etcd cluster
+  - kube-apiserver
+  - kube-controller-manager
+  - cloud-controller-manager
+  - kube-scheduler
+
+#### Node (worker) components
+  - kubelet
+  - kube-proxy
 
 
 ## kubelet 
@@ -200,6 +254,11 @@
     - cri-tools is a CLI and validation tools for Kubelet Container Runtime Interface (CRI). <a href="https://github.com/kubernetes-sigs/cri-tools">Link</a>
 
   <img src="./img/cri_containerd.png"/>
+
+  - Backdooring through kubelet. <a href="https://hakin9.org/analysis-of-a-kubernetes-hack%E2%80%8A-%E2%80%8Abackdooring-through-kubelet/">Link</a>
+
+
+
 
 
 ## -
