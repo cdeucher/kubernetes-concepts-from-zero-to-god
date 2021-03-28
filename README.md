@@ -105,20 +105,26 @@
     - ipc
 
 
+## Open Container Initiative (OCI)
+  - The Open Container Initiative develops specifications for standards on Operating System process and application containers: <a href="https://opencontainers.org/">Link</a>
 
-## Open Container Initiative
-  - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
-    - <a href="https://opencontainers.org/">Link</a>
-    - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
-    - An Introduction to Container Runtimes: <a href="https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r">Link</a>
-      <img src="./img/notsure.png">
+
+## OCI Runtime Specification    
+  - Open Container Initiative Runtime Specification: <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
+  
+    <img src="./img/notsure.png">
+
+
+## Low-Level and High-Level Container Runtimes
+  - skip 
+    <img src="./img/runtimes.jpg">
 
 
 ## Container Runtimes
 
-  - Open Container Initiative <a herf="https://opencontainers.org/">Link</a>
+  - An Introduction to Container Runtimes: <a href="https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r">Link</a>
   - A Comprehensive Container Runtime Comparison <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
-  - Demystifying Containers: Container Runtimes <a herf="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
+  - Demystifying Containers <a href="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
 
   - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
   - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
