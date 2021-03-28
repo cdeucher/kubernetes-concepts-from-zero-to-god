@@ -105,14 +105,15 @@
     - ipc
 
 
+
 ## Open Container Initiative
   - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
     - <a href="https://opencontainers.org/">Link</a>
     - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
 
-      <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
-
+ 
   <img src="./img/notsure.png">
+
 
 ## Container Runtimes
 
@@ -122,6 +123,8 @@
 
   - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
   - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
+
+    <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 #### What's LXC, Docker, Podman, CRI-O
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
