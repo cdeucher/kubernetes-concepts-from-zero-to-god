@@ -140,7 +140,7 @@
     - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
     - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
-    <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
+  <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 #### What's LXC, Docker, Podman
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
