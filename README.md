@@ -145,6 +145,14 @@
        - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
        - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
+#### Container Engines (*High-Level container runtime)
+  - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
+  - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
+
+  <img src="./img/TYING IT ALL TOGETHER.png"/>
+    <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
+
+
   <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 #### What's LXC, Docker, Podman
@@ -170,12 +178,6 @@
 
     <img src="./img/CRI.png">
 
-## Container Engines (*High-Level container runtime)
-  - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
-  - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
-
-  <img src="./img/TYING IT ALL TOGETHER.png"/>
-    <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
 
 #  Kubernetes
   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
