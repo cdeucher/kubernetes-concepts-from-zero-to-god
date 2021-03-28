@@ -132,7 +132,7 @@
 
 
 #### This is Important
-  - *Container Engines is the same as High-Level container runtime
+  - *Container Engine is the same as High-Level container runtime
   - *Container Runtime is the same as Low-Level container runtime
 
   - *Low-Level container runtime: 
@@ -148,9 +148,9 @@
        - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
        - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
-  -  *Container Engines
-        - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
-        - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
+  - *Container Engine
+       - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
+       - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
 
 
   <img src="./img/TYING IT ALL TOGETHER.png"/>
