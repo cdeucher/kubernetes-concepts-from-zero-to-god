@@ -105,34 +105,37 @@
     - ipc
 
 
-## Open Container Initiative Runtime Specification
-  - The Open Container Initiative develops specifications for standards on Operating System process and application containers: 
+## Open Container Initiative
+  - The Open Container Initiative develops specifications for standards on Operating System process and application containers.
     - <a href="https://opencontainers.org/">Link</a>
     - <a href="https://github.com/opencontainers/runtime-spec/blob/master/spec.md">Link</a>
 
       <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
+  <img src="./img/notsure.png">
 
 ## Container Runtimes
+
   - Open Container Initiative <a herf="https://opencontainers.org/">Link</a>
   - A Comprehensive Container Runtime Comparison <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
   - Demystifying Containers: Container Runtimes <a herf="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
 
   - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
+  - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
 
-#### What's LXC, Docker, Podman
+#### What's LXC, Docker, Podman, CRI-O
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
-
+  - What's CRI-O? <a href="https://cri-o.io/">Link</a>
     <img src="./img/container_runtime.png">
 
 
 ## The Container Runtime Interface
+  - Uncouple the Kubernetes from runtimes.
+
   - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
   - Kubernetes Container Runtime Interface: <a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-container-runtime-interface_596339">Link</a>
-  - What's CRI-O? <a href="https://cri-o.io/">Link</a>
-  - What's rktlet? <a href="https://github.com/kubernetes-retired/rktlet">Link</a>
 
     <img src="./img/cri-o.png">
 
