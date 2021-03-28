@@ -132,11 +132,13 @@
 
 
 #### This is Important
-  - What's runC? (Low-Level container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
-  - What's Kata Containers? (Low-Level container runtime) <a href="https://katacontainers.io/">Link</a>
-  - What's Nabla Containers? (Low-Level container runtime) <a href="https://nabla-containers.github.io/">Link</a>
-  - What's containerd (Docker)? (High-Level container runtime) <a href="https://containerd.io/docs/">Link</a>
-  - What's CRI-O? (High-Level container runtime) <a href="https://cri-o.io/">Link</a>
+  - Low-Level container runtime:  
+    - What's runC? <a href="https://www.docker.com/blog/runc/">Link</a>
+    - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
+    - What's Nabla Containers? <a href="https://nabla-containers.github.io/">Link</a>
+  - High-Level container runtime:  
+    - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
+    - What's CRI-O? <a href="https://cri-o.io/">Link</a>
 
     <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
