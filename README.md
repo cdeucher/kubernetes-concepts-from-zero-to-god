@@ -6,7 +6,8 @@
 
 
 <h1 align="center"> 
-	🚧  🚀 Em construção...  🚧
+	🚧  🚀 under constrution  🚧
+    <img src="./img/under-construction.jpg">
 </h1>
 
 
