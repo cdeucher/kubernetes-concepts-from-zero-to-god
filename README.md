@@ -199,6 +199,7 @@
    - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
 
    <img src="./img/kubernetes.png"/>
+   <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/"></a>
 
 
 ## Kubernetes Components and Architecture 
@@ -259,7 +260,7 @@
 ## Kubernetes Objects
   - Kubernetes Object Management: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/">Link</a>
   - Imperative object configuration: <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/">Link</a>
-    - Ex: kubectl an_action a_resource a_resource_name --flags
+    - Ex: kubectl create service nodeport -h
       <a href="https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8">Link</a>
   - Declarative object configuration: <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/">Link</a>
     - Ex: kubectl get -f file.yaml
@@ -299,6 +300,30 @@
 
 
 ## Kubeadm
+  - Installing kubeadm: <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/">Link</a>
+  - Creating a cluster with kubeadm: <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/">Link</a> 
+  - Authenticating with Bootstrap Tokens: <a href="https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/">Link</a>
+
+## Kubeadm implementation details
+  - <a href="https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/">Link</a>
+
+## Installing runtime
+  - <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-runtime">Link</a>
+
+#### TLS bootstrapping.
+  - In a Kubernetes cluster, the components on the worker nodes - kubelet and kube-proxy - need to communicate with Kubernetes master components, specifically kube-apiserver. In order to ensure that communication is kept private, not interfered with, and ensure that each component of the cluster is talking to another trusted component, we strongly recommend using client TLS certificates on nodes. <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/">Link</a> 
+
+  - Authenticating with Bootstrap Tokens: <a href="https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/">Link</a>
+
+
+## Cluster Networking
+  - <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
+
+  - AWS VPC CNI for Kubernetes: <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
+
+
+
+
 
 
 
