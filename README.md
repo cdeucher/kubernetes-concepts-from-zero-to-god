@@ -136,6 +136,7 @@
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
   - What's CRI-O? <a href="https://cri-o.io/">Link</a>
+    
     <img src="./img/container_runtime.png">
 
 
