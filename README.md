@@ -45,11 +45,11 @@
 
 ## Advanced Terminology 
   - Container Image Format
-  - Container Engine - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
+  - Container Engine (High-Level container runtime) - <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
   - Container Host
   - Registry Server
   - Container Orchestration
-  - Container Runtime - <a herf="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo55">Link</a>
+  - Container Runtime (Low-Level container runtime) - <a herf="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo55">Link</a>
   - Kernel Namespace
   - Graph Driver
   - Container Use Cases
