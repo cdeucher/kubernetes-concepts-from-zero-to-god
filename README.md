@@ -130,7 +130,7 @@
 
 ## The Container Runtime Interface
   - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
-  - Kubernetes Container Runtime Interface: <a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-container-runtime-interface_596339"></a>
+  - Kubernetes Container Runtime Interface: <a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-container-runtime-interface_596339">Link</a>
   - What's CRI-O? <a href="https://cri-o.io/">Link</a>
   - What's rktlet? <a href="https://github.com/kubernetes-retired/rktlet">Link</a>
 
