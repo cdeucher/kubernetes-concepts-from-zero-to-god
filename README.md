@@ -164,7 +164,7 @@
 
 
 #### CRI Specification
-  - CRI is a protocol buffers and gRPC API. The specification is defined in a protobuf file in the Kubernetes repository under the kubelet.<a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
+  - CRI is a protocol buffers and gRPC API. The specification is defined in a protobuf file in the Kubernetes repository under the kubelet. CRI defines several remote procedure calls (RPCs) and message types. The RPCs are for operations like "pull image" (ImageService.PullImage). <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
     - What's Protocol Buffers?  <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
     - What's gRPC?  <a href="https://grpc.io/">Link</a>
 
