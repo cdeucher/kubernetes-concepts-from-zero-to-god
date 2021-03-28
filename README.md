@@ -137,13 +137,13 @@
   - What's Nabla Containers? (Low-Level container runtime) <a href="https://nabla-containers.github.io/">Link</a>
   - What's containerd (Docker)? (High-Level container runtime) <a href="https://containerd.io/docs/">Link</a>
   - What's CRI-O? (High-Level container runtime) <a href="https://cri-o.io/">Link</a>
+
     <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
 #### What's LXC, Docker, Podman
   - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
   - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
   - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
-
     
     <img src="./img/container_runtime.png">
 
