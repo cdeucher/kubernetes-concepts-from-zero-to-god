@@ -117,6 +117,8 @@
 
 ## Low-Level and High-Level Container Runtimes
   - Why are Container Runtimes so Confusing? <a href="https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r">Link</a> 
+  - Why are Container Runtimes so Confusing, part 2? <a href="https://www.ianlewis.org/en/container-runtimes-part-2-anatomy-low-level-contai">Link</a> 
+  - Why are Container Runtimes so Confusing, part 3? <a href="https://www.ianlewis.org/en/container-runtimes-part-3-high-level-runtimes">Link</a> 
     <img src="./img/runtimes.jpg">
 
 
@@ -126,8 +128,9 @@
   - A Comprehensive Container Runtime Comparison <a href="https://www.capitalone.com/tech/cloud/container-runtime/">Link</a>
   - Demystifying Containers <a href="https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25">Link</a>
 
-  - What's runC? (The universal container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
-  - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
+#### This is Important
+  - What's runC? (Low-Level container runtime) <a href="https://www.docker.com/blog/runc/">Link</a>
+  - What's containerd? (High-Level container runtime) <a href="https://containerd.io/docs/">Link</a>
 
     <img src="./img/Kubernetes is Removing Docker Support_Kubernetes is Not Removing Docker Support-1.jpg"/>
 
