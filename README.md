@@ -132,8 +132,8 @@
 
 
 #### This is Important
-  - *Container Engines = High-Level container runtime
-  - *Container Runtime = Low-Level container runtime
+  - *Container Engines is the same as High-Level container runtime
+  - *Container Runtime is the same as Low-Level container runtime
 
   - *Low-Level container runtime: 
     - Low-Level container runtime implementes using Linux namespaces and cgroups. Namespaces let you virtualize system resources, like the file system or networking, for each container. Cgroups provide a way to limit the amount of resources like CPU and memory that each container can use. At the lowest level, container runtimes are responsible for setting up these namespaces and cgroups for containers, and then running commands inside those namespaces and cgroups. Low-level runtimes support using these operating system features.
