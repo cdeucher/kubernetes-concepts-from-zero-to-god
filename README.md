@@ -193,6 +193,7 @@
 
    - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
 
+   - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
 
    <img src="./img/kubernetes.png"/>
 
@@ -202,7 +203,7 @@
 
    <img src="./img/Kubernetes-101-Architecture-Diagram.jpg">
 
-#### Kubernetes Concepts
+## Kubernetes Concepts
   - <a href="https://kubernetes.io/docs/concepts/">Link</a>
   - Cluster Architecture
     - The architectural concepts behind Kubernetes.
@@ -250,20 +251,60 @@
   - kubelet
   - kube-proxy
 
+## Kubernetes API
+  - The Kubernetes API lets you query and manipulate the state of API objects in Kubernetes (for example: Pods, Namespaces, ConfigMaps, and Events).<a href="https://kubernetes.io/docs/concepts/overview/kubernetes-api/">Link</a>
 
-## kubelet 
+  - Control plane 
+  - API server
+
+#### API Conventions
+  - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
+
+#### Controlling Access to the Kubernetes API
+  - Controlling Access to the Kubernetes API: <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Link</a>
+
+## Kubernetes Objects
+  - Kubernetes Object Management: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/">Link</a>
+  - Imperative object configuration: <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/">Link</a>
+    - Ex: create <objecttype> [<subtype>] <instancename>
+  - Declarative object configuration: <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/">Link</a>
+    - Ex: kubectl get -f <filename|url>
+  - Live objects
+    - Ex: kubectl get -f <filename|url> -o yaml
+
+#### Primitive fields
+
+#### Verb-driven commands
+
+#### Service Account to access the API server
+  - <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Link</a>
+
+#### Kubernetes service accounts 
+  - <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Link</a>
+
+#### API groups
+  - <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md">Link</a>
+
+#### Adding custom resources to the Kubernetes API server
+  - <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/extending-api.md">Link</a>
+
+
+## Kubelet 
   - The kubelet is an agent that sits on each worker node in the Kubernetes cluster. The kubelet is responsible for managing the container workloads for its node. <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
 
   -  What Is CRICTL And Why Should You Care? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a> 
   - cri (CRI)
     - cri is a containerd plugin implementation of Kubernetes container runtime interface (CRI) <a href="https://github.com/containerd/cri">Link</a>
-    - cri-tools is a CLI and validation tools for Kubelet Container Runtime Interface (CRI). <a href="https://github.com/kubernetes-sigs/cri-tools">Link</a>
+    - cri-tools is a CLI and validation tools for Kubelet Container Runtime Interface (CRI). <a href="https://github.com/kubernetes-sigs/cri-tools">Link</a> 
+  - Kubectl Command Reference:<a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">Link</a>
 
   <img src="./img/cri_containerd.png"/>
 
   - Backdooring through kubelet. <a href="https://hakin9.org/analysis-of-a-kubernetes-hack%E2%80%8A-%E2%80%8Abackdooring-through-kubelet/">Link</a>
 
 
+
+## Kubeadm
 
 
 
