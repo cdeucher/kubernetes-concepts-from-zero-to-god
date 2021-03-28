@@ -153,7 +153,7 @@
 
 
   <img src="./img/containers.runtimes.works.png"/>
-    <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
+    <a href="https://dev.to/inductor/wait-docker-is-deprecated-in-kubernetes-now-what-do-i-do-e4m">Link</a>
 
 
 ## Container Runtime Interface (CRI)
@@ -196,6 +196,8 @@
 
    - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
      - Dockershim Deprecation FAQ: <a href="https://kubernetes.io/blog/2020/12/02/dockershim-faq/">Link</a> 
+   - Wait, Docker is deprecated in Kubernetes now? What do I do? <a href="https://dev.to/inductor/wait-docker-is-deprecated-in-kubernetes-now-what-do-i-do-e4m">Link</a> 
+
 
    - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
 
