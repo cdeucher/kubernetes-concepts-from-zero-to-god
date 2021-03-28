@@ -7,10 +7,10 @@
 
 <h1 align="center"> 
 	🚧  🚀 🚀🚀🚀🚀🚀🚀🚀🚀  🚧
-
-    
-    <img src="./img/under-construction.jpg">
 </h1>
+
+<img src="./img/under-construction.jpg">
+
 
 
 
