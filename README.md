@@ -157,14 +157,6 @@
     <a href="https://docs.google.com/presentation/d/1OpsvPvA82HJjHN3Vm2oVrqca1FCfn0PAfxGZ2w_ZZgc/edit#slide=id.g2441f8cc8d_0_80">Two Types of People - Those Who Understand Container Standards and Those That Don't</a>
 
 
-#### What's LXC, Docker, Podman
-  - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
-  - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
-  - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
-    
-    <img src="./img/container_runtime.png">
-
-
 ## Container Runtime Interface (CRI)
   - Uncouple the Kubernetes from runtimes.
   - CRI was introduced in Kubernetes 1.5 and acts as a bridge between the kubelet and the High-Level Container Runtimes.
@@ -179,6 +171,14 @@
     - What's gRPC?  <a href="https://grpc.io/">Link</a>
 
     <img src="./img/CRI.png">
+
+
+#### What's LXC, Docker, Podman
+  - What's LXC? (LinuX Containers) <a href="https://linuxcontainers.org/lxc/introduction/">Link</a>
+  - What's Docker? <a href="https://docs.docker.com/get-started/overview/">Link</a>
+  - What's Podman? <a href="https://podman.io/getting-started/">Link</a>
+    
+    <img src="./img/container_runtime.png">
 
 
 #  Kubernetes
