@@ -162,6 +162,12 @@
   - CRI: the Container Runtime Interface: <a href="https://github.com/kubernetes/kubernetes/blob/242a97307b34076d5d8f5bbeb154fa4d97c9ef1d/docs/devel/container-runtime-interface.md">Link</a>
   - Kubernetes Container Runtime Interface: <a href="https://www.alibabacloud.com/blog/getting-started-with-kubernetes-%7C-kubernetes-container-runtime-interface_596339">Link</a>
 
+
+#### CRI Specification
+  - CRI is a protocol buffers and gRPC API. The specification is defined in a protobuf file in the Kubernetes repository under the kubelet.<a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
+    - What's Protocol Buffers?  <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
+    - What's gRPC?  <a href="https://grpc.io/">Link</a>
+
     <img src="./img/CRI.png">
 
 ## Container Engines
@@ -177,8 +183,8 @@
   - The kubelet is an agent that sits on each worker node in the Kubernetes cluster. The kubelet is responsible for managing the container workloads for its node. <a href="https://www.ianlewis.org/en/container-runtimes-part-4-kubernetes-container-run">Link</a>
   - 
 
-#### CRI (CRI)
-  -  containerd plugin implementation of Kubernetes container runtime interface (CRI) <a href="https://github.com/containerd/cri">Link</a>
+#### cri (CRI)
+  -  cri is a containerd plugin implementation of Kubernetes container runtime interface (CRI) <a href="https://github.com/containerd/cri">Link</a>
 
   <img src="./img/cri_containerd.png"/>
 
