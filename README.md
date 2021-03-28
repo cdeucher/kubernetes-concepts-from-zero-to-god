@@ -132,14 +132,14 @@
 
 
 #### This is Important
-  - Low-Level container runtime: 
+  - Low-Level container runtime (*Container Runtime): 
     - Low-Level container runtime implementes using Linux namespaces and cgroups. Namespaces let you virtualize system resources, like the file system or networking, for each container. Cgroups provide a way to limit the amount of resources like CPU and memory that each container can use. At the lowest level, container runtimes are responsible for setting up these namespaces and cgroups for containers, and then running commands inside those namespaces and cgroups. Low-level runtimes support using these operating system features.
 
        - What's runC? <a href="https://www.docker.com/blog/runc/">Link</a>
        - What's Kata Containers? <a href="https://katacontainers.io/">Link</a>
        - What's Nabla Containers? <a href="https://nabla-containers.github.io/">Link</a>
 
-  - High-Level container runtime:  
+  - High-Level container runtime (*Container Engines):  
     - High-Level container runtime implements downloading images, managing them, and running containers from images. When it needs to run a container it unpacks the image into an OCI runtime bundle and shells out to runc to run it.
     
        - What's containerd (Docker)? <a href="https://containerd.io/docs/">Link</a>
@@ -170,7 +170,7 @@
 
     <img src="./img/CRI.png">
 
-## Container Engines (High-Level container runtime)
+## Container Engines (*High-Level container runtime)
   - A container engine is a piece of software that accepts user requests, including command line options, pulls images, and from the end user’s perspective runs the container. There are many container engines, including docker, CRI-O, and LXD: <a href="https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/#h.6yt1ex5wfo3l">Link</a>
   - So, What Does A Container Engine Really Do Anyway? <a href="http://crunchtools.com/so-what-does-a-container-engine-really-do-anyway/">Link</a>
 
