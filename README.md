@@ -228,15 +228,19 @@
   - The control plane is the system that maintains a record of all Kubernetes objects. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
   - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture"></a>
 
-#### kube-apiserver
-#### kube-scheduler
-#### kube-controller-manager
-#### etcd
+    <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
+
+
+## kube-apiserver
+## kube-scheduler
+## kube-controller-manager
+## etcd
   - A distributed, reliable key-value store for the most critical data of a distributed system. <a href="https://etcd.io/">Link</a>
   - What is etcd? <a href="https://www.redhat.com/en/topics/containers/what-is-etcd">Link</a>
-
-
-    <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
+  - Metrics: <a href="https://etcd.io/docs/v3.4/metrics/">Link</a>
+  - What is etcdctl? <a href="https://github.com/etcd-io/etcd/tree/master/etcdctl">Link</a>
+  - System limits: <a href="https://etcd.io/docs/v3.4/dev-guide/limit/">Link</a>
+  - Operating etcd clusters for Kubernetes: <a href="https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/">Link</a>
 
 
 ## Cluster Nodes
