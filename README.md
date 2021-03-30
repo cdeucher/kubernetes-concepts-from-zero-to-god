@@ -181,7 +181,7 @@
 
 
 
-## Next Step!
+# Next Step!
   
     
   <img src="./img/scale.gif"/>
@@ -205,10 +205,73 @@
    <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/"></a>
 
 
-## Kubernetes Components and Architecture 
-   - Kubernetes follows a client-server architecture. It’s possible to have a multi-master setup (for high availability), but by default there is a single master server which acts as a controlling node and point of contact. The master server consists of various components including a kube-apiserver, an etcd storage, a kube-controller-manager, a cloud-controller-manager, a kube-scheduler, and a DNS server for Kubernetes services. Node components include kubelet and kube-proxy on top of Docker. <a href="https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/">Link</a>
+## Kubernetes Architecture and Concepts
+  - From a high level, a Kubernetes environment consists of a control plane (master), a distributed storage system for keeping the cluster state consistent (etcd), and a number of cluster nodes (Kubelets). <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a>
+  - Kubernetes Architecture
+  - Kubernetes Control Plane
+  - Cluster Nodes
+  - Pods and Services
+  - Kubernetes Services
+  - Kubernetes Networking
+  - Persistent Storage in Kubernetes
+  - Discovering and Publishing Services in Kubernetes
+  - Namespaces, Labels, and Annotations
+  - Kubernetes Tooling and Clients:
 
-   <img src="./img/Kubernetes-101-Architecture-Diagram.jpg">
+  <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
+
+
+## Kubernetes Control Plane
+  - The control plane is the system that maintains a record of all Kubernetes objects. It continuously manages object states, responding to changes in the cluster; it also works to make the actual state of system objects match the desired state. As the above illustration shows, the control plane is made up of three major components: kube-apiserver, kube-controller-manager and kube-scheduler. These can all run on a single master node, or can be replicated across multiple master nodes for high availability. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
+
+  <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
+
+
+## Cluster Nodes
+  - Pods are one of the crucial concepts in Kubernetes, as they are the key construct that developers interact with. The previous concepts are infrastructure-focused and internal architecture. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Cluster-Nodes">Link</a>
+
+  <img src="./img/Kubernetes-node-taxonomy-480x581.jpg"/>
+
+## Pods and Services
+  - This logical construct packages up a single application, which can consist of multiple containers and storage volumes. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Pods-and-Services">Link</a>
+
+  <img src="./img/kubernetes-Pod-architecture-274x300.jpg"/>
+
+
+#### There are various types of pods:
+  - ReplicaSet, the default, is a relatively simple type. It ensures the specified number of pods are running
+  - Deployment is a declarative way of managing pods via ReplicaSets. Includes rollback and rolling update mechanisms
+  - Daemonset is a way of ensuring each node will run an instance of a pod. Used for cluster services, like health monitoring and log forwarding
+  - StatefulSet is tailored to managing pods that must persist or maintain state
+  - Job and CronJob run short-lived jobs as a one-off or on a schedule. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+
+## Kubernetes Services
+  - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
+
+
+## Kubernetes Networking
+  - Networking Kubernetes has a distinctive networking model for cluster-wide, podto-pod networking. In most cases, the Container Network Interface (CNI) uses a simple overlay network (like Flannel) to obscure the underlying network from the pod by using traffic encapsulation (like VXLAN); it can also use a fully-routed solution like Calico. In both cases, pods communicate over a cluster-wide pod network, managed by a CNI provider like Flannel or Calico. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+
+## Persistent Storage in Kubernetes
+  - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+
+  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
+
+
+## Discovering and Publishing Services in Kubernetes
+  - Discovering services is a crucial part of a healthy Kubernetes environment, and Kubernetes heavily relies on its integrated DNS service (either Kube-DNS or CoreDNS, depending on the cluster version) to do this. Kube-DNS and CoreDNS create, update and delete DNS records for services and associated pods, as shown in the above illustration. This allows applications to target other services or pods in the cluster via a simple and consistent naming scheme.
+
+#### There are four different service types, each with different behaviors:
+  - ClusterIP exposes the service on an internal IP only. 
+  - LoadBalancer exposes the service externally using a cloud provider’s load balancer. 
+  - ExternalName will just map a CNAME record in DNS. No proxying of any kind is established. 
+  - <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+  <img src="./img/kubernetes-service-discovery.jpg"/>
+
 
 ## Kubernetes Concepts
   - <a href="https://kubernetes.io/docs/concepts/">Link</a>
@@ -337,6 +400,9 @@
 
 
 # Plus
+
+## Kubernetes vs Docker: Understanding Containers
+  - <a href="https://semaphoreci.com/blog/kubernetes-vs-docker">Link</a>
 
 ## Docker and LXD
   <img src="./img/DockerLXD.jpg" height="300"/>
