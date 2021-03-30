@@ -224,7 +224,7 @@
    <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
 
 
-## Kubernetes Control Plane
+# Kubernetes Control Plane
   - The control plane is the system that maintains a record of all Kubernetes objects. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
   - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture"></a>
 
@@ -232,8 +232,12 @@
 
 
 ## kube-apiserver
+  - The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/">Link</a>
+
+
 ## kube-scheduler
 ## kube-controller-manager
+## kube-proxy
 ## etcd
   - A distributed, reliable key-value store for the most critical data of a distributed system. <a href="https://etcd.io/">Link</a>
   - What is etcd? <a href="https://www.redhat.com/en/topics/containers/what-is-etcd">Link</a>
