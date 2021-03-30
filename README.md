@@ -194,7 +194,18 @@
     The main objective of Kubernetes is to hide the complexity of managing a fleet of containers by providing REST APIs for the required functionalities. Kubernetes is portable in nature, meaning it can run on various public or private cloud platforms such as AWS, Azure, OpenStack, or Apache Mesos. It can also run on bare metal machines. <a href="https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/">Link</a>
   - K8s is just an abbreviation of Kubernetes  
 
-   - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
+  - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
+  - Kubernetes Architecture: <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a> 
+  - Kubernetes Control Plane
+  - Cluster Nodes
+  - Pods and Services
+  - Kubernetes Services
+  - Kubernetes Networking
+  - Persistent Storage in Kubernetes
+  - Discovering and Publishing Services in Kubernetes
+  - Namespaces, Labels, and Annotations
+  - Kubernetes Tooling and Clients:
+
 
    <img src="./img/kubernetes.png"/>
    <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/">Link</a>
@@ -208,24 +219,22 @@
   - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
 
 
-## Kubernetes Architecture and Concepts
-  - Kubernetes Architecture
-  - Kubernetes Control Plane
-  - Cluster Nodes
-  - Pods and Services
-  - Kubernetes Services
-  - Kubernetes Networking
-  - Persistent Storage in Kubernetes
-  - Discovering and Publishing Services in Kubernetes
-  - Namespaces, Labels, and Annotations
-  - Kubernetes Tooling and Clients:
-  - <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a>
-  
-    <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
+## Kubernetes Architecture
+
+   <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
 
 
 ## Kubernetes Control Plane
-  - The control plane is the system that maintains a record of all Kubernetes objects. It continuously manages object states, responding to changes in the cluster; it also works to make the actual state of system objects match the desired state. As the above illustration shows, the control plane is made up of three major components: kube-apiserver, kube-controller-manager and kube-scheduler. These can all run on a single master node, or can be replicated across multiple master nodes for high availability. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
+  - The control plane is the system that maintains a record of all Kubernetes objects. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
+  - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture"></a>
+
+#### kube-apiserver
+#### kube-scheduler
+#### kube-controller-manager
+#### etcd
+  - A distributed, reliable key-value store for the most critical data of a distributed system. <a href="https://etcd.io/">Link</a>
+  - What is etcd? <a href="https://www.redhat.com/en/topics/containers/what-is-etcd">Link</a>
+
 
     <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
 
@@ -256,6 +265,7 @@
 ## Kubernetes Networking
   - Networking Kubernetes has a distinctive networking model for cluster-wide, podto-pod networking. In most cases, the Container Network Interface (CNI) uses a simple overlay network (like Flannel) to obscure the underlying network from the pod by using traffic encapsulation (like VXLAN); it can also use a fully-routed solution like Calico. In both cases, pods communicate over a cluster-wide pod network, managed by a CNI provider like Flannel or Calico. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
+  - What is The Calico? <a href="https://docs.projectcalico.org/about/about-calico">Link</a>
 
 ## Persistent Storage in Kubernetes
   - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
