@@ -218,24 +218,24 @@
   - Namespaces, Labels, and Annotations
   - Kubernetes Tooling and Clients:
 
-  <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
+    <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
 
 
 ## Kubernetes Control Plane
   - The control plane is the system that maintains a record of all Kubernetes objects. It continuously manages object states, responding to changes in the cluster; it also works to make the actual state of system objects match the desired state. As the above illustration shows, the control plane is made up of three major components: kube-apiserver, kube-controller-manager and kube-scheduler. These can all run on a single master node, or can be replicated across multiple master nodes for high availability. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
 
-  <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
+    <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
 
 
 ## Cluster Nodes
   - Pods are one of the crucial concepts in Kubernetes, as they are the key construct that developers interact with. The previous concepts are infrastructure-focused and internal architecture. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Cluster-Nodes">Link</a>
 
-  <img src="./img/Kubernetes-node-taxonomy-480x581.jpg"/>
+    <img src="./img/Kubernetes-node-taxonomy-480x581.jpg"/>
 
 ## Pods and Services
   - This logical construct packages up a single application, which can consist of multiple containers and storage volumes. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Pods-and-Services">Link</a>
 
-  <img src="./img/kubernetes-Pod-architecture-274x300.jpg"/>
+    <img src="./img/kubernetes-Pod-architecture-274x300.jpg"/>
 
 
 #### There are various types of pods:
@@ -270,35 +270,7 @@
   - ExternalName will just map a CNAME record in DNS. No proxying of any kind is established. 
   - <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
-  <img src="./img/kubernetes-service-discovery.jpg"/>
-
-
-## Kubernetes Concepts
-  - <a href="https://kubernetes.io/docs/concepts/">Link</a>
-  - Cluster Architecture
-    - The architectural concepts behind Kubernetes.
-  - Containers
-    - Technology for packaging an application along with its runtime dependencies.
-  - Workloads
-    - Understand Pods, the smallest deployable compute object in Kubernetes, and the higher-level abstractions that help you to run them.
-  - Services, Load Balancing, and Networking
-    - Concepts and resources behind networking in Kubernetes.
-  - Storage
-    - Ways to provide both long-term and temporary storage to Pods in your cluster.
-  - Configuration
-    - Resources that Kubernetes provides for configuring Pods.
-  - Security
-    - Concepts for keeping your cloud-native workload secure.
-  - Policies
-    - Policies you can configure that apply to groups of resources.
-  - Scheduling and Eviction
-    - In Kubernetes, scheduling refers to making sure that Pods are matched to Nodes so that the kubelet can run them. Eviction is the process of proactively failing one or more Pods on resource-starved Nodes.
-  - Cluster Administration
-    - Lower-level detail relevant to creating or administering a Kubernetes cluster.
-  - Extending Kubernetes
-    - Different ways to change the behavior of your Kubernetes cluster.
-
-#### Kubernetes Design Principles
+    <img src="./img/kubernetes-service-discovery.jpg"/>
 
 #### Master Components
   - etcd cluster
