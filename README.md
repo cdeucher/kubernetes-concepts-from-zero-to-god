@@ -226,7 +226,7 @@
 
 # Kubernetes Control Plane
   - The control plane is the system that maintains a record of all Kubernetes objects. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
-  - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture"></a>
+  - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture">Link</a>
 
     <img src="./img/Kubernetes-control-plane-taxonomy.jpg"/>
 
@@ -273,11 +273,21 @@
 ## Kubernetes Networking
   - Networking Kubernetes has a distinctive networking model for cluster-wide, podto-pod networking. In most cases, the Container Network Interface (CNI) uses a simple overlay network (like Flannel) to obscure the underlying network from the pod by using traffic encapsulation (like VXLAN); it can also use a fully-routed solution like Calico. In both cases, pods communicate over a cluster-wide pod network, managed by a CNI provider like Flannel or Calico. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
-  - What is The Calico? <a href="https://docs.projectcalico.org/about/about-calico">Link</a>
+#### Container Network Interface(CNI)
+  - Container Network Interface(CNI) specification for managing network resources on a cluster. This relatively simple specification makes it easy for Kubernetes to interact with a wide range of CNI-based software solutions. <a href="https://ubuntu.com/kubernetes/docs/cni-overview">Link</a> 
+  - What's CNI plugins? <a href="https://rancher.com/blog/2019/2019-03-21-comparing-kubernetes-cni-providers-flannel-calico-canal-and-weave/">Link</a>
+  - What's The Calico? <a href="https://docs.projectcalico.org/about/about-calico">Link</a>
+  - What's Antrea? <a href="https://github.com/vmware-tanzu/antrea">Link</a>
+  - What's AWS VPC CNI for Kubernetes? <a href="https://github.com/aws/amazon-vpc-cni-k8s">Link</a>
+  - What's Flannel? <a href="https://github.com/flannel-io/flannel#flannel">Link</a>
+
+#### Container Network Interface Specification
+  - <a href="https://github.com/containernetworking/cni/blob/master/SPEC.md">Link</a>
 
 ## Persistent Storage in Kubernetes
   - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
+  - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
 
   <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
 
