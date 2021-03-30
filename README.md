@@ -194,15 +194,20 @@
     The main objective of Kubernetes is to hide the complexity of managing a fleet of containers by providing REST APIs for the required functionalities. Kubernetes is portable in nature, meaning it can run on various public or private cloud platforms such as AWS, Azure, OpenStack, or Apache Mesos. It can also run on bare metal machines. <a href="https://www.aquasec.com/cloud-native-academy/kubernetes-101/kubernetes-architecture/">Link</a>
   - K8s is just an abbreviation of Kubernetes  
 
-   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
-     - Dockershim Deprecation FAQ: <a href="https://kubernetes.io/blog/2020/12/02/dockershim-faq/">Link</a> 
-   - Wait, Docker is deprecated in Kubernetes now? What do I do? <a href="https://dev.to/inductor/wait-docker-is-deprecated-in-kubernetes-now-what-do-i-do-e4m">Link</a> 
-
-
    - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
 
    <img src="./img/kubernetes.png"/>
-   <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/"></a>
+   <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/">Link</a>
+
+
+## Kubernetes API
+  - The Kubernetes API lets you query and manipulate the state of API objects in Kubernetes (for example: Pods, Namespaces, ConfigMaps, and Events).<a href="https://kubernetes.io/docs/concepts/overview/kubernetes-api/">Link</a>
+
+  - Control plane 
+  - API server
+
+#### API Conventions
+  - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
 
 
 ## Kubernetes Architecture and Concepts
@@ -283,14 +288,6 @@
   - kubelet
   - kube-proxy
 
-## Kubernetes API
-  - The Kubernetes API lets you query and manipulate the state of API objects in Kubernetes (for example: Pods, Namespaces, ConfigMaps, and Events).<a href="https://kubernetes.io/docs/concepts/overview/kubernetes-api/">Link</a>
-
-  - Control plane 
-  - API server
-
-#### API Conventions
-  - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
 
 #### Controlling Access to the Kubernetes API
   - Controlling Access to the Kubernetes API: <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Link</a>
@@ -361,6 +358,11 @@
   - AWS VPC CNI for Kubernetes: <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
 
 
+
+## Kubernetes is removing docker support
+   - Kubernetes is removing docker support: <a href="https://www.openshift.com/blog/kubernetes-is-removing-docker-support-kubernetes-is-not-removing-docker-support">Link</a>
+     - Dockershim Deprecation FAQ: <a href="https://kubernetes.io/blog/2020/12/02/dockershim-faq/">Link</a> 
+   - Wait, Docker is deprecated in Kubernetes now? What do I do? <a href="https://dev.to/inductor/wait-docker-is-deprecated-in-kubernetes-now-what-do-i-do-e4m">Link</a> 
 
 
 
