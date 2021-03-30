@@ -203,15 +203,12 @@
 ## Kubernetes API
   - The Kubernetes API lets you query and manipulate the state of API objects in Kubernetes (for example: Pods, Namespaces, ConfigMaps, and Events).<a href="https://kubernetes.io/docs/concepts/overview/kubernetes-api/">Link</a>
 
-  - Control plane 
-  - API server
 
 #### API Conventions
   - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
 
 
 ## Kubernetes Architecture and Concepts
-  - From a high level, a Kubernetes environment consists of a control plane (master), a distributed storage system for keeping the cluster state consistent (etcd), and a number of cluster nodes (Kubelets). <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a>
   - Kubernetes Architecture
   - Kubernetes Control Plane
   - Cluster Nodes
@@ -222,7 +219,8 @@
   - Discovering and Publishing Services in Kubernetes
   - Namespaces, Labels, and Annotations
   - Kubernetes Tooling and Clients:
-
+  - <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a>
+  
     <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
 
 
