@@ -284,6 +284,10 @@
 #### Container Network Interface Specification
   - <a href="https://github.com/containernetworking/cni/blob/master/SPEC.md">Link</a>
 
+
+  <img src="./img/kubernetes-network.png"/>
+
+
 ## Persistent Storage in Kubernetes
   - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
