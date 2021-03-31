@@ -285,7 +285,7 @@
   - <a href="https://github.com/containernetworking/cni/blob/master/SPEC.md">Link</a>
 
 
-  <img src="./img/kubernetes-network.png"/>
+    <img src="./img/kubernetes-network.png" height="300"/>
 
 
 ## Persistent Storage in Kubernetes
