@@ -292,7 +292,7 @@
 
   - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
 
-  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
+      <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
 
 
 ## Kubernetes Services
