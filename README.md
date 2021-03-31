@@ -219,6 +219,10 @@
   - The conventions of the Kubernetes API (and related APIs in the ecosystem) are intended to ease client development and ensure that configuration mechanisms can be implemented that work across a diverse set of use cases consistently. <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata">Link</a>
 
 
+#### Controlling Access to the Kubernetes API
+  - Controlling Access to the Kubernetes API: <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Link</a>
+
+
 ## Kubernetes Architecture
 
    <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
@@ -266,10 +270,13 @@
   - Job and CronJob run short-lived jobs as a one-off or on a schedule. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
 
-## Kubernetes Services
-  - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
+## Cluster Networking
+  - <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
 
-      <img src="./img/kubernetes-network-meme.png"/>
+  - AWS VPC CNI for Kubernetes: <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
+
+
+    <img src="./img/kubernetes-network-meme.png"/>
 
 ## Kubernetes Networking
   - Networking Kubernetes has a distinctive networking model for cluster-wide, podto-pod networking. In most cases, the Container Network Interface (CNI) uses a simple overlay network (like Flannel) to obscure the underlying network from the pod by using traffic encapsulation (like VXLAN); it can also use a fully-routed solution like Calico. In both cases, pods communicate over a cluster-wide pod network, managed by a CNI provider like Flannel or Calico. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
@@ -291,13 +298,8 @@
   <img src="./img/kubernetes-network.png"/>
 
 
-## Persistent Storage in Kubernetes
-  - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
-
-  - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
-
-  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
-
+## Kubernetes Services
+  - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
 
 ## Discovering and Publishing Services in Kubernetes
   - Discovering services is a crucial part of a healthy Kubernetes environment, and Kubernetes heavily relies on its integrated DNS service (either Kube-DNS or CoreDNS, depending on the cluster version) to do this. Kube-DNS and CoreDNS create, update and delete DNS records for services and associated pods, as shown in the above illustration. This allows applications to target other services or pods in the cluster via a simple and consistent naming scheme.
@@ -310,20 +312,20 @@
 
     <img src="./img/kubernetes-service-discovery.jpg"/>
 
-#### Master Components
-  - etcd cluster
-  - kube-apiserver
-  - kube-controller-manager
-  - cloud-controller-manager
-  - kube-scheduler
+
+## Persistent Storage in Kubernetes
+  - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+  - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
+
+  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
+
 
 #### Node (worker) components
   - kubelet
   - kube-proxy
 
 
-#### Controlling Access to the Kubernetes API
-  - Controlling Access to the Kubernetes API: <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Link</a>
 
 ## Kubernetes Objects
   - Kubernetes Object Management: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/">Link</a>
@@ -383,12 +385,6 @@
   - In a Kubernetes cluster, the components on the worker nodes - kubelet and kube-proxy - need to communicate with Kubernetes master components, specifically kube-apiserver. In order to ensure that communication is kept private, not interfered with, and ensure that each component of the cluster is talking to another trusted component, we strongly recommend using client TLS certificates on nodes. <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/">Link</a> 
 
   - Authenticating with Bootstrap Tokens: <a href="https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/">Link</a>
-
-
-## Cluster Networking
-  - <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
-
-  - AWS VPC CNI for Kubernetes: <a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-networking-model">Link</a>
 
 
 
