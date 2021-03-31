@@ -222,12 +222,6 @@
 #### Controlling Access to the Kubernetes API
   - Controlling Access to the Kubernetes API: <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Link</a>
 
-
-## Kubernetes Architecture
-
-   <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
-
-
 # Kubernetes Control Plane
   - The control plane is the system that maintains a record of all Kubernetes objects. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#Kubernetes-Control-Plane">Link</a>
   - What happens in the Kubernetes control plane? <a href="https://www.redhat.com/en/topics/containers/kubernetes-architecture">Link</a>
@@ -238,6 +232,10 @@
 ## kube-apiserver
   - The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/">Link</a>
 
+#### Service Account to access the API server
+  - <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Link</a>
+#### Adding custom resources to the Kubernetes API server
+  - <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/extending-api.md">Link</a>
 
 ## kube-scheduler
 ## kube-controller-manager
@@ -298,6 +296,19 @@
   <img src="./img/kubernetes-network.png"/>
 
 
+## Persistent Storage in Kubernetes
+  - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+
+  - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
+
+  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
+
+
+## Kubernetes Architecture
+
+   <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
+
+
 ## Kubernetes Services
   - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
 
@@ -311,14 +322,6 @@
   - <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
 
     <img src="./img/kubernetes-service-discovery.jpg"/>
-
-
-## Persistent Storage in Kubernetes
-  - Kubernetes uses the concept of volumes. At its core, a volume is just a directory, possibly with some data in it, which is accessible to a pod. How that directory comes to be, the medium that backs it, and its contents are determined by the particular volume type used. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
-
-  - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
-
-  <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
 
 
 ## Node (worker) components
@@ -341,8 +344,6 @@
 
 #### Verb-driven commands
 
-#### Service Account to access the API server
-  - <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Link</a>
 
 #### Kubernetes service accounts 
   - <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/">Link</a>
@@ -350,8 +351,6 @@
 #### API groups
   - <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md">Link</a>
 
-#### Adding custom resources to the Kubernetes API server
-  - <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/extending-api.md">Link</a>
 
 
 ## Kubelet 
