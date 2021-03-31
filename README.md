@@ -269,9 +269,12 @@
 ## Kubernetes Services
   - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
 
+  <img src="./img/kubernetes-network-meme.png"/>
 
 ## Kubernetes Networking
   - Networking Kubernetes has a distinctive networking model for cluster-wide, podto-pod networking. In most cases, the Container Network Interface (CNI) uses a simple overlay network (like Flannel) to obscure the underlying network from the pod by using traffic encapsulation (like VXLAN); it can also use a fully-routed solution like Calico. In both cases, pods communicate over a cluster-wide pod network, managed by a CNI provider like Flannel or Calico. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a>
+  
+  - What's an Overlay Network? <a href="https://itnext.io/kubernetes-is-hard-why-eks-makes-it-easier-for-network-and-security-architects-ea6d8b2ca965">Link</a>
 
 #### Container Network Interface(CNI)
   - Container Network Interface(CNI) specification for managing network resources on a cluster. This relatively simple specification makes it easy for Kubernetes to interact with a wide range of CNI-based software solutions. <a href="https://ubuntu.com/kubernetes/docs/cni-overview">Link</a> 
