@@ -195,20 +195,11 @@
   - K8s is just an abbreviation of Kubernetes  
 
   - Glossary: <a href="https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane">Link</a>
-  - Kubernetes Architecture: <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a> 
-  - Kubernetes Control Plane
-  - Cluster Nodes
-  - Pods and Services
-  - Kubernetes Services
-  - Kubernetes Networking
-  - Persistent Storage in Kubernetes
-  - Discovering and Publishing Services in Kubernetes
-  - Namespaces, Labels, and Annotations
-  - Kubernetes Tooling and Clients:
 
+#### Kubernetes Architecture
 
-   <img src="./img/kubernetes.png"/>
-   <a href="https://kubernetes.io/blog/2015/11/one-million-requests-per-second-dependable-and-dynamic-distributed-systems-at-scale/">Link</a>
+   <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
+   <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/#architecture">Link</a> 
 
 
 ## Kubernetes API
@@ -302,11 +293,6 @@
   - Why change the default storage class? <a href="https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/">Link</a> 
 
   <img src="./img/kubernetes-Persistent-volumes-claims-storage-classes-480x317.jpg"/>
-
-
-## Kubernetes Architecture
-
-   <img src="./img/kubernetes-constructs-concepts-architecture.jpg"/>
 
 
 ## Kubernetes Services
