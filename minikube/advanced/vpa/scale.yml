@@ -1,0 +1,21 @@
+apiVersion: "autoscaling.k8s.io/v1"
+kind: VerticalPodAutoscaler
+metadata:
+  name: app-vpa
+  namespace: dev  
+spec:
+  targetRef:
+    apiVersion: "apps/v1"
+    kind: Deployment
+    name: deploy-hello
+  updatePolicy:
+    updateMode: "Off"
+  resourcePolicy:
+    containerPolicies:
+    - containerName: "app-hello"
+      minAllowed:
+        cpu: "50m"
+        memory: "100Mi"
+      maxAllowed:
+        cpu: "1000m"
+        memory: "1048Mi"

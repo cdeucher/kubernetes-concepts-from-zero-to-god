@@ -85,7 +85,7 @@
     <img src="./img/user-space-vs-kernel-space-system-calls-gears.png" alt="user-space-vs-kernel-space-system" title="user-space-vs-kernel-space-system" height="300"/>
 
 ## Cgroup vs Namespaces
-- Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour.
+- Cgroup: Control Groups provide a mechanism for aggregating/partitioning sets of tasks, and all their future children, into hierarchical groups with specialized behaviour. <a href="https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt">Link</a>
 - Namespace: wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource.
 
 #### In short:
@@ -298,6 +298,9 @@
 ## Kubernetes Services
   - Services are the Kubernetes way of configuring a proxy to forward traffic to a set of pods. Instead of static IP address-based assignments, Services use selectors (or labels) to define which pods uses which service. These dynamic assignments make releasing new versions or adding pods to a service really easy. Anytime a Pod with the same labels as a service is spun up, it’s assigned to the service. <a href="https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/">Link</a> 
 
+  - What's Ingress? <a href="https://medium.com/@cashisclay/kubernetes-ingress-82aa960f658e">Link</a>
+  - What's Traefik? <a href="https://medium.com/@patrickeasters/using-traefik-with-tls-on-kubernetes-cb67fb43a948">Link</a>
+
 #### Discovering and Publishing Services in Kubernetes
   - Discovering services is a crucial part of a healthy Kubernetes environment, and Kubernetes heavily relies on its integrated DNS service (either Kube-DNS or CoreDNS, depending on the cluster version) to do this. Kube-DNS and CoreDNS create, update and delete DNS records for services and associated pods, as shown in the above illustration. This allows applications to target other services or pods in the cluster via a simple and consistent naming scheme.
 
@@ -379,6 +382,12 @@
    - Wait, Docker is deprecated in Kubernetes now? What do I do? <a href="https://dev.to/inductor/wait-docker-is-deprecated-in-kubernetes-now-what-do-i-do-e4m">Link</a> 
 
 
+
+## Kubernetes Metrics Server
+  - Kubernetes monitoring architecture: <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/monitoring_architecture.md">Link</a>
+  - Metrics Server is a scalable: <a href="https://github.com/kubernetes-sigs/metrics-server">Link</a>
+  - Metrics API design: <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/resource-metrics-api.md">Link</a>
+  - Metrics Server design: <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/metrics-server.md">Link</a>
 
 
 
