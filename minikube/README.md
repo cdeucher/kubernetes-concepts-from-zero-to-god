@@ -29,19 +29,19 @@ kubectl get pods -l app=cattle
 ######################
 
 1)
-kubectl create deployment hello-forward --image=k8s.gcr.io/echoserver:1.4
-kubectl expose deployment hello-forward --type=NodePort --port=8080
-kubectl port-forward service/hello-forward 7080:8080
+- kubectl create deployment hello-forward --image=k8s.gcr.io/echoserver:1.4
+- kubectl expose deployment hello-forward --type=NodePort --port=8080
+- kubectl port-forward service/hello-forward 7080:8080
 
 2)
-kubectl create deployment web-nodeport --image=k8s.gcr.io/echoserver:1.4
-kubectl expose deployment web-nodeport --type=NodePort --port=8080
-kubectl get service web-nodeport
-minikube service web-nodeport --url
+- kubectl create deployment web-nodeport --image=k8s.gcr.io/echoserver:1.4
+- kubectl expose deployment web-nodeport --type=NodePort --port=8080
+- kubectl get service web-nodeport
+- minikube service web-nodeport --url
 
 3)
-kubectl create deployment balanced --image=k8s.gcr.io/echoserver:1.4  
-kubectl expose deployment balanced --type=LoadBalancer --port=8080
+- kubectl create deployment balanced --image=k8s.gcr.io/echoserver:1.4  
+- kubectl expose deployment balanced --type=LoadBalancer --port=8080
 
 4)
 minikube tunnel
