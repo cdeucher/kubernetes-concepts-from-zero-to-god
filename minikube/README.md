@@ -3,6 +3,7 @@ https://minikube.sigs.k8s.io/docs/start/
 
 #### Minikube Tips
 - minikube start
+- minikube start --nodes 2 -p multinode-demo
 - minikube delete --all
 - minikube stop
 - minikube dashboard
