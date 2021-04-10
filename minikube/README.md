@@ -119,7 +119,7 @@ kube describe ingress/ingress-hello
  - You can use Metrics Server for: <a href="https://github.com/kubernetes-sigs/metrics-server">Link</a>
     - CPU/Memory based horizontal autoscaling (learn more about Horizontal Pod Autoscaler)
     - Automatically adjusting/suggesting resources needed by containers (learn more about Vertical Pod Autoscaler)
- - Don't use Metrics Server when you need: <a href="https://github.com/kubernetes-sigs/metrics-server">Link</a>
+    - Don't use Metrics Server when you need: <a href="https://github.com/kubernetes-sigs/metrics-server">Link</a>
     - Non-Kubernetes clusters
     - An accurate source of resource usage metrics
     - Horizontal autoscaling based on other resources than CPU/Memory
