@@ -313,6 +313,15 @@
     <img src="./img/kubernetes-service-discovery.jpg"/>
 
 
+## Kubernetes Service Mesh
+  - What's service mesh? <a href="https://platform9.com/blog/kubernetes-service-mesh-a-comparison-of-istio-linkerd-and-consul/#what-is-service-mesh">Link</a>
+  - What's istio?<a href="https://thenewstack.io/why-do-you-need-istio-when-you-already-have-kubernetes/">Link</a>
+
+#### Traffic Forwarding
+  - Each node in a Kubernetes cluster deploys a kube-proxy component that communicates with the Kubernetes API Server, gets information about the services in the cluster, and then sets iptables rules to send requests for service directly to the corresponding Endpoint (a pod belonging to the same group of services).<a href="https://thenewstack.io/why-do-you-need-istio-when-you-already-have-kubernetes/">Link</a>
+
+    <img src="./img/service-mesh.png"/>
+
 ## Node (worker) components
   - kubelet
   - kube-proxy

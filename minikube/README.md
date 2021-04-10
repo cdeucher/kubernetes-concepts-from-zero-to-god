@@ -6,6 +6,7 @@ https://minikube.sigs.k8s.io/docs/start/
 - minikube delete --all
 - minikube stop
 - minikube dashboard
+- minikube tunnel
 
 #### Imperative Commands
 - kube get all
@@ -213,199 +214,47 @@ kube describe ingress/ingress-hello
   <a href="https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/">Link</a> 
 
 
-## Helm 3
-- Install - <a href="https://helm.sh/docs/intro/install/">Link</a>
+## Monitoring with Prometheus and Traefik
+  - <a href="https://traefik.io/blog/capture-traefik-metrics-for-apps-on-kubernetes-with-prometheus/">Link</a>
+  - minikube start --kubernetes-version=v1.21.0
+  - Install Helm 3 - <a href="https://helm.sh/docs/intro/install/">Link</a>
     - curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
     - chmod 700 get_helm.sh
     - ./get_helm.sh
-  - Install prometheus - <a href="https://sysdig.com/blog/kubernetes-monitoring-prometheus/">Link</a>
-    - kubectl config use-context minikube
-    - helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-    - helm repo add stable https://charts.helm.sh/stable
-    - helm repo update
-    - helm repo list  
-    - helm install stable prometheus-community/prometheus
-      - export POD_NAME=$(kubectl get pods --namespace minikube -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
-      - kubectl --namespace minikube port-forward $POD_NAME 9090
-      - http://localhost:9090
-    - Install traefik - <a href="https://sysdig.com/blog/kubernetes-monitoring-prometheus/">Link</a>
-      - helm install traefik stable/traefik --set metrics.prometheus.enabled=true
-      - kubectl get all
-      - kube describe pod/traefik-5587fc59bd-fnh6x
-      - kubectl port-forward pod/traefik-5587fc59bd-fnh6x 9100
-      - curl 127.0.0.1:9100/metrics
-    - http://localhost:9090/classic/status
-  - Test: 
-    - http://localhost:9090/targets  
-  - Setup traefik for prometheus
-    - kubectl get all
-    - kubectl edit cm stable-prometheus-server  
-      - FIND FOR : job_name: 'prometheus', ADD a new JOB UNDER:
-        - "job_name: traefik
-            static_configs:
-            - targets:
-              - traefik-prometheus:9100"
-    - Check the new provider
-      - http://localhost:9090/targets  
+
+  - Install Traefik:
+    - helm install traefik traefik/traefik -n kube-system -f traefik-sre-metrics/traefik-values.yaml
+    - kubectl apply -f traefik-sre-metrics/traefik-dashboard-service.yaml
+    - kubectl port-forward service/traefik-dashboard 9000:9000 -n kube-system
+    - http://localhost:9000/dashboard/#/
+    - http://localhost:9000/metrics
+    - helm uninstall traefik  
   
-  - kubectl config use-context dev
-    - ADD annotations into metadata YML, here we will inform prometheus what port to use.
-      - annotations:
-          prometheus.io/port: "9216"
-          prometheus.io/scrape: "true" 
-- Uninstall
-    - helm uninstall stable
+  - Install Prometheus:
+    - helm repo add prometheus-community https://github.com/prometheus-community/helm-charts
+    - helm search repo prometheus-community
+    - helm install prometheus-stack prometheus-community/kube-prometheus-stack -n kube-system
+    - kubectl apply -f traefik-sre-metrics/traefik-service-monitor.yaml -n default
+    - kubectl port-forward service/prometheus-stack-kube-prom-prometheus 9090:9090 -n kube-system
+    - kubectl apply -f traefik-sre-metrics/traefik-rules.yaml -n default
+    - kubectl port-forward service/prometheus-stack-kube-prom-alertmanager 9093:9093 -n kube-system
+    - http://localhost:9090/targets  
+    - kubectl port-forward service/prometheus-stack-grafana 10080:80 kube-system
+      - http://localhost:10080
+      - User: admin, Pass: prom-operator
+      - Click the Import button and input 11462
+
+  - Generating some traffic:
+    - kubectl apply -f traefik-sre-metrics/httpbin.yaml -n dev
+    - kubectl port-forward service/httpbin 8000:8000
+    - ab -c 5 -n 10000  -m PATCH -H "host:httpbin.local" -H "accept: application/json" http://localhost:8000/patch
+    - ab -c 5 -n 10000  -m GET -H "host:httpbin.local" -H "accept: application/json" http://localhost:8000/get
+    - ab -c 5 -n 10000  -m POST -H "host:httpbin.local" -H "accept: application/json" http://localhost:8000/post
 
 
+  <img src="./image/dashboard-data.png"/>
 
 ## extra)
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 docker tag echobuild:dev0.1 localhost:5000/echobuild:dev0.1
 docker push localhost:5000/echobuild:dev0.1
-
--------------------------------------------------------
-vi namespace.json
---
-{
-    "apiVersion": "v1",
-    "kind": "Namespace",
-    "metadata": {
-      "name": "dev",
-      "labels": {
-        "name": "dev"
-      }
-    }
-  }
-
-
-vi app.yml
---
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deploy-agendamento
-  labels:
-    tier: backend
-spec:
-  selector:
-    matchLabels:
-      app: app-agendamento
-      tier: backend
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: app-agendamento
-        tier: backend
-    spec:        
-      containers:
-      - name: app-agendamento
-        image: echobuild:dev0.1
-        ports:
-          - containerPort: 8080
-            name: "http-server"
-
-
-vi service.yml
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: agendamento-service
-  labels:
-    app: app-agendamento
-    tier: backend
-spec:
-  type: NodePort
-  ports:
-  - protocol: TCP
-    targetPort: http-server
-    port: 8080
-    nodePort: 30000
-  selector:
-    app: app-agendamento
-    tier: backend
-
-vi lb.yml
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: lb-hello
-  labels:
-    app: app-hello
-    tier: backend
-spec:
-  type: LoadBalancer
-  ports:
-  - protocol: TCP
-    targetPort: http-server
-    port: 8080
-  selector:
-    app: app-hello
-    tier: backend
-
-vi ingress.yml
----
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
-metadata:
-  name: ingress-hello
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  rules:
-  - host: app.internal.io
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: lb-hello
-          servicePort: 8080
-  - host: app.internal.io
-    http:
-      paths:
-      - path: /v2
-        backend:
-          serviceName: lb-hello
-          servicePort: 8080          
-
-vi scale-app-hpa.yml
----
-
-apiVersion: autoscaling/v2beta2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: scale-app
-  namespace: dev
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: deploy-hello
-  minReplicas: 1
-  maxReplicas: 10
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 50
-  - type: Resource
-    resource:
-      name: memory
-      target:
-        type: AverageValue
-        averageValue: 100Mi
-  '''
-  # Uncomment these lines if you create the custom packets_per_second metric and
-  # configure your app to export the metric.
-  # - type: Pods
-  #   pods:
-  #     metric:
-  #       name: packets_per_second
-  #     target:
-  #       type: AverageValue
-  #       averageValue: 100
-'''
