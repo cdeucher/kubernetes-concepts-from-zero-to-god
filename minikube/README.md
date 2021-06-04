@@ -79,7 +79,6 @@ kubectl get services balanced
 vi Dockerfile
 --
 FROM k8s.gcr.io/echoserver:1.4
-MAINTAINER Cristiano Althoff
 
 4)
 docker build -t echobuild:dev0.1 .
